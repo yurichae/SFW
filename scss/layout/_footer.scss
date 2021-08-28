@@ -1,0 +1,174 @@
+.yr-footer {
+    background-color: $point-color;
+    .inner-footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        color: white;
+        overflow: hidden;
+        .company {
+            height: 40px;
+        }
+        .copyright {
+            .copyText {
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.25;
+                letter-spacing: normal;
+            }
+            > span:before {
+                content: " | ";
+                padding: 10px;
+            }
+            > span:first-child:before {
+                content: "";
+                padding: 0;
+            }
+        }
+        .btnPartner {
+            position: absolute;
+            img {
+                margin-left: 20px;
+            }
+        }
+        .btnSNS {
+            position: absolute;
+        }
+    }
+}
+@import "../helpers/mixin";
+
+@include mobile {
+    .yr-footer {
+        .inner-footer {
+            padding: 20px 0;
+            .company {
+                height: 40px;
+                a {
+                    font-size: 15px;
+                }
+            }
+            .copyright span {
+                font-size: 12px;
+            }
+            .copyText {
+                font-size: 10px;
+                margin-top: 55px;
+            }
+            .btnPartner {
+                right: 12px;
+                bottom: 35px;
+            }
+            div.btnPartner img {
+                max-width: 60px;
+            }
+            div.btnSNS {
+                height: 5px;
+                bottom: 60px;
+                right: auto;
+            }
+            .btnSNS a {
+                margin: 0px 7px 0px 0px;
+            }
+            .btnSNS a img {
+                height: 25px;
+            }
+        }
+    }
+}
+@include tablet {
+    .yr-footer {
+        background-color: $point-color;
+        .inner-footer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 60px 0;
+            color: white;
+            overflow: hidden;
+            .company {
+                height: 40px;
+            }
+            .copyright {
+                .copyText {
+                    font-size: 16px;
+                    margin-top: 63px;
+                }
+                > span:before {
+                    content: " | ";
+                    padding: 10px;
+                }
+            }
+            .btnPartner {
+                bottom: 150px;
+                right: 33px;
+                img {
+                    max-width: 100px;
+                }
+            }
+            .btnSNS {
+                position: absolute;
+                bottom: 50px;
+                right: 15px;
+                a {
+                    margin: 0px 6px;
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include desktop {
+    .yr-footer {
+        background-color: $point-color;
+        .inner-footer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 60px 0;
+            color: white;
+            overflow: hidden;
+            .company {
+                height: 40px;
+            }
+            .copyright {
+                .copyText {
+                    font-size: 16px;
+                    margin-top: 63px;
+                }
+                > span:before {
+                    content: " | ";
+                    padding: 10px;
+                }
+            }
+            .btnPartner {
+                bottom: 150px;
+                right: 33px;
+                img {
+                    max-width: 100px;
+                }
+            }
+            .btnSNS {
+                width: 320px;
+                position: absolute;
+                bottom: 50px;
+                right: 15px;
+                a {
+                    margin: 0px 13px;
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
